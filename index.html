@@ -2,32 +2,157 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teste de Página</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopee Brasil - Promoções</title>
+  <link rel="icon" href="https://i.imgur.com/GWHjZQe.png" type="image/png" />
   <style>
     body {
-      background-color: #f2f2f2;
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
+      background-color: #fff5f5;
     }
-    h1 {
-      color: #ff5722;
+
+    header {
+      background-color: #ee4d2d;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      background: #ff5722;
-      color: white;
+
+    header img {
+      height: 40px;
+    }
+
+    nav {
+      background-color: white;
       padding: 10px 20px;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      color: #333;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .produtos {
+      max-width: 1000px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 20px;
+      padding: 0 10px 30px;
+    }
+
+    .produto {
+      background-color: white;
       border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .produto:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .produto img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .produto p {
+      font-weight: bold;
+      margin: 8px 0 5px;
+      font-size: 16px;
+    }
+
+    .preco {
+      color: #ee4d2d;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .botao {
+      display: inline-block;
+      background-color: #ee4d2d;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #cc3e24;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 15px 10px;
+      border-top: 1px solid #ddd;
+      background-color: #fff5f5;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Site Falso de Teste</h1>
-  <p>Esse site foi criado como exemplo para o trabalho escolar sobre estelionato digital.</p>
-  <a href="pagamento.html">Ir para a página de pagamento falsa</a>
+
+<header>
+  <img src="https://i.imgur.com/GWHjZQe.png" alt="Shopee Logo" />
+</header>
+
+<nav>
+  Frete grátis em milhares de produtos • Promoção exclusiva do dia • Pix com desconto
+</nav>
+
+<img class="banner" src="https://i.imgur.com/H9brHXw.jpg" alt="Banner promocional Shopee" />
+
+<section class="produtos">
+  <div class="produto">
+    <img src="https://i.imgur.com/hW1P3uK.png" alt="iPhone 14 Pro Max" />
+    <p>iPhone 14 Pro Max</p>
+    <p class="preco">R$299,00</p>
+    <a href="pagamento.html" class="botao">Comprar</a>
+  </div>
+  <div class="produto">
+    <img src="https://i.imgur.com/b3xUbGM.png" alt="Tênis Nike Air Max" />
+    <p>Tênis Nike Air Max</p>
+    <p class="preco">R$89,90</p>
+    <a href="pagamento.html" class="botao">Comprar</a>
+  </div>
+  <div class="produto">
+    <img src="https://i.imgur.com/oJNSGex.png" alt="Smartwatch Série 8" />
+    <p>Smartwatch Série 8</p>
+    <p class="preco">R$59,00</p>
+    <a href="pagamento.html" class="botao">Comprar</a>
+  </div>
+  <div class="produto">
+    <img src="https://i.imgur.com/kqv4rFh.png" alt="Fone JBL Bluetooth" />
+    <p>Fone JBL Bluetooth</p>
+    <p class="preco">R$49,90</p>
+    <a href="pagamento.html" class="botao">Comprar</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Shopee Brasil - Trabalho Escolar
+</footer>
+
 </body>
 </html>
